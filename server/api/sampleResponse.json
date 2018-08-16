@@ -1,0 +1,1585 @@
+ {
+  "landmarkAnnotations": [
+    {
+      "mid": "/m/072p8",
+      "description": "Statue of Liberty",
+      "score": 0.6994703,
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 452,
+            "y": 99
+          },
+          {
+            "x": 580,
+            "y": 99
+          },
+          {
+            "x": 580,
+            "y": 457
+          },
+          {
+            "x": 452,
+            "y": 457
+          }
+        ]
+      },
+      "locations": [
+        {
+          "latLng": {
+            "latitude": 40.689261,
+            "longitude": -74.044482
+          }
+        }
+      ]
+    }
+  ],
+  "labelAnnotations": [
+    {
+      "mid": "/m/013_1c",
+      "description": "statue",
+      "score": 0.97237366,
+      "topicality": 0.97237366
+    },
+    {
+      "mid": "/m/02ljgl",
+      "description": "monument",
+      "score": 0.96215886,
+      "topicality": 0.96215886
+    },
+    {
+      "mid": "/m/05_5t0l",
+      "description": "landmark",
+      "score": 0.9489118,
+      "topicality": 0.9489118
+    },
+    {
+      "mid": "/m/0245zn",
+      "description": "national historic landmark",
+      "score": 0.88790405,
+      "topicality": 0.88790405
+    },
+    {
+      "mid": "/m/01bqvp",
+      "description": "sky",
+      "score": 0.8841106,
+      "topicality": 0.8841106
+    },
+    {
+      "mid": "/m/0pgl9",
+      "description": "tourist attraction",
+      "score": 0.74870336,
+      "topicality": 0.74870336
+    },
+    {
+      "mid": "/m/02q3d5",
+      "description": "memorial",
+      "score": 0.7346641,
+      "topicality": 0.7346641
+    },
+    {
+      "mid": "/m/02q7ylj",
+      "description": "daytime",
+      "score": 0.72761816,
+      "topicality": 0.72761816
+    },
+    {
+      "mid": "/m/01fdzj",
+      "description": "tower",
+      "score": 0.7155611,
+      "topicality": 0.7155611
+    },
+    {
+      "mid": "/m/07bxq",
+      "description": "tourism",
+      "score": 0.64855933,
+      "topicality": 0.64855933
+    },
+    {
+      "mid": "/m/07yr8h",
+      "description": "historic site",
+      "score": 0.64562166,
+      "topicality": 0.64562166
+    },
+    {
+      "mid": "/m/06npx",
+      "description": "sea",
+      "score": 0.60180324,
+      "topicality": 0.60180324
+    },
+    {
+      "mid": "/m/017hf",
+      "description": "beacon",
+      "score": 0.5103083,
+      "topicality": 0.5103083
+    }
+  ],
+  "textAnnotations": [
+    {
+      "locale": "en",
+      "description": "Ah AA MMU\n",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 384,
+            "y": 475
+          },
+          {
+            "x": 544,
+            "y": 475
+          },
+          {
+            "x": 544,
+            "y": 489
+          },
+          {
+            "x": 384,
+            "y": 489
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ah",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 384,
+            "y": 475
+          },
+          {
+            "x": 426,
+            "y": 475
+          },
+          {
+            "x": 426,
+            "y": 489
+          },
+          {
+            "x": 384,
+            "y": 489
+          }
+        ]
+      }
+    },
+    {
+      "description": "AA",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 419,
+            "y": 475
+          },
+          {
+            "x": 467,
+            "y": 475
+          },
+          {
+            "x": 467,
+            "y": 489
+          },
+          {
+            "x": 419,
+            "y": 489
+          }
+        ]
+      }
+    },
+    {
+      "description": "MMU",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 501,
+            "y": 475
+          },
+          {
+            "x": 544,
+            "y": 475
+          },
+          {
+            "x": 544,
+            "y": 489
+          },
+          {
+            "x": 501,
+            "y": 489
+          }
+        ]
+      }
+    }
+  ],
+  "safeSearchAnnotation": {
+    "adult": "VERY_UNLIKELY",
+    "spoof": "VERY_UNLIKELY",
+    "medical": "VERY_UNLIKELY",
+    "violence": "VERY_UNLIKELY",
+    "racy": "VERY_UNLIKELY"
+  },
+  "imagePropertiesAnnotation": {
+    "dominantColors": {
+      "colors": [
+        {
+          "color": {
+            "red": 94,
+            "green": 171,
+            "blue": 229
+          },
+          "score": 0.3662835,
+          "pixelFraction": 0.30853143
+        },
+        {
+          "color": {
+            "red": 224,
+            "green": 181,
+            "blue": 167
+          },
+          "score": 0.08803026,
+          "pixelFraction": 0.023445131
+        },
+        {
+          "color": {
+            "red": 174,
+            "green": 246,
+            "blue": 241
+          },
+          "score": 0.0077764904,
+          "pixelFraction": 0.0023607945
+        },
+        {
+          "color": {
+            "red": 21,
+            "green": 16,
+            "blue": 9
+          },
+          "score": 0.002974284,
+          "pixelFraction": 0.043878216
+        },
+        {
+          "color": {
+            "red": 98,
+            "green": 175,
+            "blue": 226
+          },
+          "score": 0.0867571,
+          "pixelFraction": 0.054461088
+        },
+        {
+          "color": {
+            "red": 196,
+            "green": 152,
+            "blue": 137
+          },
+          "score": 0.082291774,
+          "pixelFraction": 0.019211983
+        },
+        {
+          "color": {
+            "red": 125,
+            "green": 186,
+            "blue": 233
+          },
+          "score": 0.07875826,
+          "pixelFraction": 0.05413546
+        },
+        {
+          "color": {
+            "red": 146,
+            "green": 191,
+            "blue": 225
+          },
+          "score": 0.06886163,
+          "pixelFraction": 0.0849072
+        },
+        {
+          "color": {
+            "red": 118,
+            "green": 186,
+            "blue": 230
+          },
+          "score": 0.043609347,
+          "pixelFraction": 0.019944644
+        },
+        {
+          "color": {
+            "red": 57,
+            "green": 156,
+            "blue": 226
+          },
+          "score": 0.0192539,
+          "pixelFraction": 0.13944969
+        }
+      ]
+    }
+  },
+  "cropHintsAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 246
+            },
+            {
+              "x": 673
+            },
+            {
+              "x": 673,
+              "y": 533
+            },
+            {
+              "x": 246,
+              "y": 533
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 0.58
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 189
+            },
+            {
+              "x": 740
+            },
+            {
+              "x": 740,
+              "y": 533
+            },
+            {
+              "x": 189,
+              "y": 533
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 0.69
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 141
+            },
+            {
+              "x": 787
+            },
+            {
+              "x": 787,
+              "y": 533
+            },
+            {
+              "x": 141,
+              "y": 533
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 0.77
+      }
+    ]
+  },
+  "fullTextAnnotation": {
+    "pages": [
+      {
+        "property": {
+          "detectedLanguages": [
+            {
+              "languageCode": "en",
+              "confidence": 1
+            }
+          ]
+        },
+        "width": 950,
+        "height": 534,
+        "blocks": [
+          {
+            "boundingBox": {
+              "vertices": [
+                {
+                  "x": 384,
+                  "y": 475
+                },
+                {
+                  "x": 544,
+                  "y": 475
+                },
+                {
+                  "x": 544,
+                  "y": 489
+                },
+                {
+                  "x": 384,
+                  "y": 489
+                }
+              ]
+            },
+            "paragraphs": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 384,
+                      "y": 475
+                    },
+                    {
+                      "x": 544,
+                      "y": 475
+                    },
+                    {
+                      "x": 544,
+                      "y": 489
+                    },
+                    {
+                      "x": 384,
+                      "y": 489
+                    }
+                  ]
+                },
+                "words": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "en"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 384,
+                          "y": 475
+                        },
+                        {
+                          "x": 426,
+                          "y": 475
+                        },
+                        {
+                          "x": 426,
+                          "y": 489
+                        },
+                        {
+                          "x": 384,
+                          "y": 489
+                        }
+                      ]
+                    },
+                    "symbols": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 384,
+                              "y": 475
+                            },
+                            {
+                              "x": 402,
+                              "y": 475
+                            },
+                            {
+                              "x": 402,
+                              "y": 489
+                            },
+                            {
+                              "x": 384,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "A",
+                        "confidence": 0.37
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ],
+                          "detectedBreak": {
+                            "type": "SPACE"
+                          }
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 408,
+                              "y": 475
+                            },
+                            {
+                              "x": 426,
+                              "y": 475
+                            },
+                            {
+                              "x": 426,
+                              "y": 489
+                            },
+                            {
+                              "x": 408,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "h",
+                        "confidence": 0.4
+                      }
+                    ],
+                    "confidence": 0.38
+                  },
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "en"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 419,
+                          "y": 475
+                        },
+                        {
+                          "x": 467,
+                          "y": 475
+                        },
+                        {
+                          "x": 467,
+                          "y": 489
+                        },
+                        {
+                          "x": 419,
+                          "y": 489
+                        }
+                      ]
+                    },
+                    "symbols": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 419,
+                              "y": 475
+                            },
+                            {
+                              "x": 440,
+                              "y": 475
+                            },
+                            {
+                              "x": 440,
+                              "y": 489
+                            },
+                            {
+                              "x": 419,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "A",
+                        "confidence": 0.88
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ],
+                          "detectedBreak": {
+                            "type": "SPACE"
+                          }
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 446,
+                              "y": 475
+                            },
+                            {
+                              "x": 467,
+                              "y": 475
+                            },
+                            {
+                              "x": 467,
+                              "y": 489
+                            },
+                            {
+                              "x": 446,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "A",
+                        "confidence": 0.24
+                      }
+                    ],
+                    "confidence": 0.56
+                  },
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "en"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 501,
+                          "y": 475
+                        },
+                        {
+                          "x": 544,
+                          "y": 475
+                        },
+                        {
+                          "x": 544,
+                          "y": 489
+                        },
+                        {
+                          "x": 501,
+                          "y": 489
+                        }
+                      ]
+                    },
+                    "symbols": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 501,
+                              "y": 475
+                            },
+                            {
+                              "x": 515,
+                              "y": 475
+                            },
+                            {
+                              "x": 515,
+                              "y": 489
+                            },
+                            {
+                              "x": 501,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "M",
+                        "confidence": 0.97
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 521,
+                              "y": 475
+                            },
+                            {
+                              "x": 532,
+                              "y": 475
+                            },
+                            {
+                              "x": 532,
+                              "y": 489
+                            },
+                            {
+                              "x": 521,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "M",
+                        "confidence": 0.14
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ],
+                          "detectedBreak": {
+                            "type": "LINE_BREAK"
+                          }
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 534,
+                              "y": 475
+                            },
+                            {
+                              "x": 544,
+                              "y": 475
+                            },
+                            {
+                              "x": 544,
+                              "y": 489
+                            },
+                            {
+                              "x": 534,
+                              "y": 489
+                            }
+                          ]
+                        },
+                        "text": "U",
+                        "confidence": 0.1
+                      }
+                    ],
+                    "confidence": 0.4
+                  }
+                ],
+                "confidence": 0.44
+              }
+            ],
+            "blockType": "TEXT",
+            "confidence": 0.44
+          }
+        ]
+      }
+    ],
+    "text": "Ah AA MMU\n"
+  },
+  "webDetection": {
+    "webEntities": [
+      {
+        "entityId": "/m/072p8",
+        "score": 2.4138327,
+        "description": "Statue of Liberty"
+      },
+      {
+        "entityId": "/m/01pdsd",
+        "score": 0.6916965,
+        "description": "New York Harbor"
+      },
+      {
+        "entityId": "/m/02nyg",
+        "score": 0.66742504,
+        "description": "Ellis Island"
+      },
+      {
+        "entityId": "/g/11g1spfjgw",
+        "score": 0.63435,
+        "description": "Access Unlocked"
+      },
+      {
+        "entityId": "/m/015dvh",
+        "score": 0.6167,
+        "description": "National Park Service"
+      },
+      {
+        "entityId": "/m/013_1c",
+        "score": 0.599,
+        "description": "Statue"
+      },
+      {
+        "entityId": "/t/26tx7xy9_tgvr",
+        "score": 0.5446
+      },
+      {
+        "entityId": "/g/1263lyvhg",
+        "score": 0.515944,
+        "description": "Statue of Liberty Ellis Island"
+      },
+      {
+        "entityId": "/m/0166ls",
+        "score": 0.4848,
+        "description": "Park"
+      },
+      {
+        "entityId": "/m/05gz5",
+        "score": 0.4518,
+        "description": "National park"
+      },
+      {
+        "entityId": "/m/02ljgl",
+        "score": 0.4106,
+        "description": "Monument"
+      },
+      {
+        "entityId": "/g/11bwdv_cg1",
+        "score": 0.403,
+        "description": "Conservation-restoration of the Statue of Liberty"
+      },
+      {
+        "entityId": "/m/026kp2",
+        "score": 0.052555874,
+        "description": "Liberty Island"
+      },
+      {
+        "entityId": "/m/02_286",
+        "score": 0.00007872164,
+        "description": "New York City"
+      },
+      {
+        "entityId": "/m/09c7w0",
+        "score": 0.0000017433604,
+        "description": "United States"
+      }
+    ],
+    "fullMatchingImages": [
+      {
+        "url": "https://www.nps.gov/common/uploads/grid_builder/ner/crop16_9/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg?width\\x3d950\\x26quality\\x3d90\\x26mode\\x3dcrop"
+      },
+      {
+        "url": "https://kgiannakidis.files.wordpress.com/2018/07/89721987-1dd8-b71b-0be77eeae39e0520.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DcW55vYW4AEqXt4.jpg"
+      },
+      {
+        "url": "https://www.longfabu.com/photo/532869/statue-of-liberty-national-monument-us-national-park-service-plan-your-visit.jpg"
+      },
+      {
+        "url": "https://interactive.vcmedia.vn/2018/2/12/liberty-statue-15184268413251489553327.jpg"
+      },
+      {
+        "url": "https://www.top10twist.com/wp-content/uploads/2018/03/The-Statue-of-liberty-1.jpg"
+      },
+      {
+        "url": "https://www.top10twist.com/wp-content/uploads/2018/03/The-Statue-of-liberty-1-950x509.jpg"
+      },
+      {
+        "url": "https://2.bp.blogspot.com/-BW5vkQNcCts/WnZp0OzL18I/AAAAAAAADrc/PZKDkUBK3k41GqadEwTKfGKNGOR-mmD7gCLcBGAs/s1600/sl%2Bfigure.png"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DkDf8CMVAAA6dVO.jpg"
+      },
+      {
+        "url": "http://www.travelstyle.gr/wp-content/uploads/2018/02/ImageHandler-1.jpeg"
+      },
+      {
+        "url": "https://newyorkcityhotspots.com/wp-content/uploads/2018/02/27_89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+      },
+      {
+        "url": "http://spisanievip.com/wp-content/uploads/2018/05/Statue-of-Liberty.jpg"
+      },
+      {
+        "url": "http://www.groupdestinations.com/yahoo_site_admin/assets/images/statue.186135301_std.jpg"
+      },
+      {
+        "url": "https://www.tutorialathome.in/postimg/2018/05/statue-of-liberty-03.jpg"
+      },
+      {
+        "url": "http://worldbridge.edu.np/wp-content/uploads/2018/06/usa-img.png"
+      },
+      {
+        "url": "http://www.africacablenetwork.com/wp-content/uploads/2018/07/Status-of-Liberty-600x450.png"
+      },
+      {
+        "url": "http://www.bomboradyo.com/wp-content/uploads/Statue-of-Liberty.jpg"
+      },
+      {
+        "url": "https://espsales.net/wp-content/uploads/2018/07/640StatueofLiberty.jpg"
+      },
+      {
+        "url": "https://kgiannakidis.files.wordpress.com/2018/07/89721987-1dd8-b71b-0be77eeae39e0520.jpg?w=636&amp;h=357"
+      },
+      {
+        "url": "https://qph.fs.quoracdn.net/main-qimg-c690ea293eb5ba398c8d04035c5d6e01"
+      },
+      {
+        "url": "http://img.lostbird.vn/600x-/2018/08/05/324697/89721987-1dd8-b71b-0be77eeae39e0520-1.jpg"
+      },
+      {
+        "url": "https://i1.wp.com/dial7.blog/wp-content/uploads/2018/07/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg?resize=553%2C311&amp;ssl=1"
+      },
+      {
+        "url": "https://www.top10twist.com/wp-content/uploads/2018/03/The-Statue-of-liberty-1-554x305.jpg"
+      },
+      {
+        "url": "http://image.congan.com.vn/thumbnail/CATP-480-2018-6-17/4_1.jpg"
+      },
+      {
+        "url": "http://www.dcnepalonline.com/assets/upload/contentthumb/thumb14/13_Myagdi_youths_en_route_to_the_US_illegally_stranded_in_Nigeria5051.jpg"
+      },
+      {
+        "url": "https://xperdunn.files.wordpress.com/2018/05/statuolibrty_01.jpg?w=300&amp;h=169"
+      },
+      {
+        "url": "https://usahispanicpress.com/wp-content/uploads/2018/07/libertad.jpg"
+      },
+      {
+        "url": "http://www.upaweaverham.org/Images/ImageRepository/year_4_5_fa/3_lib.jpg"
+      },
+      {
+        "url": "https://i1.wp.com/www.chescowatch.com/wp-content/uploads/2018/06/sl-figure.png?resize=300%2C165"
+      }
+    ],
+    "partialMatchingImages": [
+      {
+        "url": "http://200years.club/wp-content/uploads/2017/09/statue-of-liberty-garden-statue-plan-your-visit-enhance-your-trip-to-the-statue-of-liberty-statue-of-liberty-garden-sculpture.jpg"
+      },
+      {
+        "url": "https://images.pexels.com/photos/220773/pexels-photo-220773.jpeg?cs=srgb&amp;dl=landmark-harbor-architecture-220773.jpg&amp;fm=jpg"
+      },
+      {
+        "url": "https://images.pexels.com/photos/220773/pexels-photo-220773.jpeg?cs=srgb&amp;dl=landmark-harbor-architecture-220773.jpg&amp;fm=jpg"
+      },
+      {
+        "url": "https://www.widest.com/wp-content/uploads/Statue-of-Liberty-New-York-City-1.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Dj11kHOXcAAz1AP.png"
+      },
+      {
+        "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10156615861279122"
+      },
+      {
+        "url": "https://www.nps.gov/npgallery/GetAsset/3454FD91-1DD8-B71B-0B21A93398840C35/proxy/hires"
+      },
+      {
+        "url": "http://www.umb-carom.org/AP/GetFile.aspx?EFW7UNFCGAef4w5MWqlxMpSiZf5XkFK9"
+      },
+      {
+        "url": "https://tabily.net/wp-content/uploads/2018/07/statue-of-liberty-1746798_960_720.jpg"
+      },
+      {
+        "url": "http://franksgourmetgrille.com/wp-content/uploads/2018/04/inside-the-statue-of-liberty-pictures-superb-photographs-when-visiting-kiev-a-must-see-is-the-statue-mother-motherland-of-inside-the-statue-of-liberty-pictures.jpg"
+      },
+      {
+        "url": "https://scontent-lht6-1.cdninstagram.com/vp/dcb32fb1ef072af6986a55e32217ccb4/5BF018BD/t51.2885-15/e35/33721531_2113926408862636_771092130239086592_n.jpg?se=8&amp;ig_cache_key=MTc5OTY1MDA0NDE0MjM0NzYzNA%3D%3D.2"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DhQI8UWVMAAxswa.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/DhcwgjsVMAApeou.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Dhcwe7jUwAAPm2G.jpg"
+      },
+      {
+        "url": "https://www.knbb.nl/sites/default/files/styles/nieuws_detail/public/userfiles/1-vrijheid.jpg?itok=7V7TLzvz"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/photogallery/ner/park/stli/3457A073-1DD8-B71B-0BEB2FF4DD540CD5/3457A073-1DD8-B71B-0BEB2FF4DD540CD5-large.jpg"
+      },
+      {
+        "url": "https://i2.wp.com/www.destinoseviagens.com/wp-content/uploads/2016/12/estatua-liberdade-nova-iorque.jpg?fit=800%2C522&amp;ssl=1"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/grid_builder/nri/crop1_1/522A764F-1DD8-B71B-0B9D2705F772EF0A.jpg?width=640&amp;quality=90&amp;mode=crop"
+      },
+      {
+        "url": "https://2.bp.blogspot.com/-BW5vkQNcCts/WnZp0OzL18I/AAAAAAAADrc/PZKDkUBK3k41GqadEwTKfGKNGOR-mmD7gCLcBGAs/w1200-h630-p-k-no-nu/sl%2Bfigure.png"
+      },
+      {
+        "url": "https://www.sakshi.com/sites/default/files/article_images/2018/08/9/us.jpg"
+      },
+      {
+        "url": "https://static1.squarespace.com/static/59c8478d37c58193141d9950/t/5b0855d988251b7c836588ac/1527272978681/Liberty.jpg"
+      },
+      {
+        "url": "http://ttpath.com/wp-content/uploads/2018/05/Statue-of-Liberty-New-Yoark-630x534.jpg"
+      },
+      {
+        "url": "https://www.globehopper.nl/wp-content/uploads/2017/09/Uitzicht-op-het-vrijheidsbeeld-en-Ellis-eiland-vanaf-de-Staten-Island-Ferry-e1506171142890-700x456.jpg"
+      },
+      {
+        "url": "https://carwad.net/sites/default/files/styles/225x120/public/statue-of-liberty-140328-2551827.jpg?itok=QZ1x2YXP"
+      },
+      {
+        "url": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/87512/SITours/highlights-of-manhattan-in-a-day-with-statue-of-liberty-and-ellis-in-new-york-641650.jpg"
+      },
+      {
+        "url": "https://ntv-bn-cdn.s3.amazonaws.com/document18/1530775038-liberty-3.jpg"
+      },
+      {
+        "url": "http://cdn2.tstatic.net/makassar/foto/bank/images/patung-liberty_20180711_132855.jpg"
+      },
+      {
+        "url": "http://cdn2.tstatic.net/palembang/foto/bank/images/patung-liberty_20180212_140639.jpg"
+      },
+      {
+        "url": "https://www.maxpixel.net/static/photo/640/Liberty-Island-Statue-Of-Liberty-New-York-City-1746798.jpg"
+      },
+      {
+        "url": "https://www.viralcharcha.com/wp-content/uploads/Statue-Of-Liberty-New-York-City.jpg?x20139"
+      },
+      {
+        "url": "https://i2.kknews.cc/SIG=35a94ge/12qn00050q190p20qp8n.jpg"
+      },
+      {
+        "url": "https://mapadecursosonline.com/wp-content/uploads/2017/03/Sites-de-refer%C3%AAncia-no-ensino-gratuito-de-Ingl%C3%AAs-1.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Dj6irwpXgAAkMWb.jpg"
+      },
+      {
+        "url": "https://www.hminternational.net/wp-content/uploads/2018/04/us.jpg"
+      },
+      {
+        "url": "http://usfl.com/wp-content/uploads/2018/06/ef08c6bcd0ba9b7fc73a00cc3a982e55.jpg"
+      },
+      {
+        "url": "http://eletsoja.blogcdn.p3k.hu/files/2016/10/statue-of-liberty-1746798_640-600x391.jpg"
+      },
+      {
+        "url": "https://img-s1.onedio.com/id-5ae70662d8ed5837225e9b86/rev-0/w-635/f-jpg-webp/s-bc239ee84f835696022525d44fcc1cb2f84e26f2.webp"
+      },
+      {
+        "url": "http://www.guesstour.com/images/good_img/56/00E011156_0002A.jpg"
+      },
+      {
+        "url": "https://www.thutazone.net/wp-content/uploads/2018/07/7-70.jpg"
+      },
+      {
+        "url": "https://4.bp.blogspot.com/-Hu4MTW7AYFY/Wz4UnTf-MvI/AAAAAAAAJE0/0jPWRNUm1RYUW5SuKJIjw1Xnx4k5zGKTQCLcBGAs/s1600/statueofliberty.jpg"
+      },
+      {
+        "url": "https://4.bp.blogspot.com/-Hu4MTW7AYFY/Wz4UnTf-MvI/AAAAAAAAJE0/0jPWRNUm1RYUW5SuKJIjw1Xnx4k5zGKTQCLcBGAs/w1200-h630-p-k-no-nu/statueofliberty.jpg"
+      },
+      {
+        "url": "https://images.pexels.com/photos/220773/pexels-photo-220773.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350"
+      },
+      {
+        "url": "https://www.sakshi.com/sites/default/files/styles/twitter_card/public/article_images/2018/08/9/us.jpg?itok=neAogHfF"
+      },
+      {
+        "url": "http://chinaairline.biz/static/news/2018/0621/mua-v%C3%A9-m%C3%A1y-bay-%C4%91i-M%E1%BB%B9-gi%C3%A1-r%E1%BA%BB-160_thumb_500x360.jpg"
+      },
+      {
+        "url": "http://www.modecker.com/wp-content/uploads/2016/10/statue-of-liberty-536x301.jpg"
+      },
+      {
+        "url": "https://www.hedvabnastezka.cz/uploads/gallery/detail/pixabay.jpg"
+      },
+      {
+        "url": "https://writingwhenblue.files.wordpress.com/2018/01/mayon-in-new-york-by-alveen-alamo-osma.jpg?w=512"
+      },
+      {
+        "url": "http://media.philstar.com/images/the-philippine-star/lifestyle/on-the-radar/20180126/mayon-8.jpg"
+      },
+      {
+        "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2260227430922432"
+      },
+      {
+        "url": "https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/19708827_mayon-volcano-just-left-naga-to-travel_t334e2610.jpg"
+      }
+    ],
+    "pagesWithMatchingImages": [
+      {
+        "url": "https://www.nps.gov/stli/index.htm",
+        "pageTitle": "&lt;b&gt;Statue Of Liberty&lt;/b&gt; National Monument (U.S. National Park Service)",
+        "fullMatchingImages": [
+          {
+            "url": "https://www.nps.gov/common/uploads/grid_builder/ner/crop16_9/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg?width=950&amp;quality=90&amp;mode=crop"
+          }
+        ]
+      },
+      {
+        "url": "https://www.nps.gov/media/photo/view.htm?id=3454FD91-1DD8-B71B-0B21A93398840C35",
+        "pageTitle": "Photo (U.S. National Park Service)",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.nps.gov/npgallery/GetAsset/3454FD91-1DD8-B71B-0B21A93398840C35/proxy/hires"
+          }
+        ]
+      },
+      {
+        "url": "https://nyharborparks.org/nyh-slide-statue-of-liberty-full/",
+        "pageTitle": "Harbor view of the &lt;b&gt;Statue of Liberty&lt;/b&gt; – New York Harbor Parks",
+        "partialMatchingImages": [
+          {
+            "url": "https://nyharborparks.org/wp-content/uploads/2017/12/nyh-slide-statue-of-liberty-full.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://mylocalnews.us/community-websites/new-york-city/women-climbs-statue-liberty-protest/",
+        "pageTitle": "Women Climbs &lt;b&gt;Statue of Liberty&lt;/b&gt; in Protest | My Local News.US",
+        "fullMatchingImages": [
+          {
+            "url": "https://mylocalnews.us/wp-content/uploads/2018/07/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://dial7.blog/2018/07/12/an-iconic-monument-the-statue-of-liberty/",
+        "pageTitle": "An Iconic Monument: The &lt;b&gt;Statue of Liberty&lt;/b&gt;",
+        "fullMatchingImages": [
+          {
+            "url": "https://i1.wp.com/dial7.blog/wp-content/uploads/2018/07/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg?resize=553%2C311&amp;ssl=1"
+          }
+        ]
+      },
+      {
+        "url": "http://accessunlocked.com/statue-of-liberty-climber-captured/",
+        "pageTitle": "&lt;b&gt;Statue of Liberty&lt;/b&gt; climber captured - Access Unlocked",
+        "fullMatchingImages": [
+          {
+            "url": "http://accessunlocked.com/wp-content/uploads/2018/07/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://mylocalnews.us/newyork/2018/07/05/women-climbs-statue-liberty-protest/",
+        "pageTitle": "Women Climbs &lt;b&gt;Statue of Liberty&lt;/b&gt; in Protest - New York State News",
+        "fullMatchingImages": [
+          {
+            "url": "https://mylocalnews.us/newyork/wp-content/uploads/sites/53/2018/07/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.shakesville.com/2018/07/therese-patricia-okoumou-scales-statue.html",
+        "pageTitle": "Shakesville: Therese Patricia Okoumou Scales the &lt;b&gt;Statue of Liberty&lt;/b&gt; ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://4.bp.blogspot.com/-Hu4MTW7AYFY/Wz4UnTf-MvI/AAAAAAAAJE0/0jPWRNUm1RYUW5SuKJIjw1Xnx4k5zGKTQCLcBGAs/s1600/statueofliberty.jpg"
+          },
+          {
+            "url": "https://4.bp.blogspot.com/-Hu4MTW7AYFY/Wz4UnTf-MvI/AAAAAAAAJE0/0jPWRNUm1RYUW5SuKJIjw1Xnx4k5zGKTQCLcBGAs/w1200-h630-p-k-no-nu/statueofliberty.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://ecza.solinf.co/statue-of-the-liberty/",
+        "pageTitle": "&lt;b&gt;statue of&lt;/b&gt; the &lt;b&gt;liberty&lt;/b&gt; - Ecza.solinf.co",
+        "fullMatchingImages": [
+          {
+            "url": "https://www.nps.gov/common/uploads/grid_builder/ner/crop16_9/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://nyharborparks.org/",
+        "pageTitle": "New York Harbor Parks",
+        "partialMatchingImages": [
+          {
+            "url": "https://nyharborparks.org/wp-content/uploads/2017/12/nyh-slide-statue-of-liberty-full.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.maxpixel.net/Statue-Of-Liberty-Ny-New-York-Nyc-New-York-City-267949",
+        "pageTitle": "Free photo &lt;b&gt;Statue Of Liberty&lt;/b&gt; Ny New York Nyc New York City - Max ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.maxpixel.net/static/photo/640/Liberty-Island-Statue-Of-Liberty-New-York-City-1746798.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.maxpixel.net/Nyc-New-York-City-Statue-Of-Liberty-Ny-New-York-267948",
+        "pageTitle": "Free photo Nyc New York City &lt;b&gt;Statue Of Liberty&lt;/b&gt; Ny New York - Max ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.maxpixel.net/static/photo/640/Liberty-Island-Statue-Of-Liberty-New-York-City-1746798.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://mandelaeffectproof.blogspot.com/2018/02/lady-liberty-which-hand-holds-torch.html",
+        "pageTitle": "Lady &lt;b&gt;Liberty&lt;/b&gt; - Which Hand Holds the Torch? - Mandela Effect Proof",
+        "fullMatchingImages": [
+          {
+            "url": "https://2.bp.blogspot.com/-BW5vkQNcCts/WnZp0OzL18I/AAAAAAAADrc/PZKDkUBK3k41GqadEwTKfGKNGOR-mmD7gCLcBGAs/s1600/sl%2Bfigure.png"
+          },
+          {
+            "url": "https://2.bp.blogspot.com/-BW5vkQNcCts/WnZp0OzL18I/AAAAAAAADrc/PZKDkUBK3k41GqadEwTKfGKNGOR-mmD7gCLcBGAs/w1200-h630-p-k-no-nu/sl%2Bfigure.png"
+          }
+        ]
+      },
+      {
+        "url": "https://triprepublic.com/it/product/viator/87512P1",
+        "pageTitle": "Highlights of Manhattan in a Day with &lt;b&gt;Statue of Liberty&lt;/b&gt; and Ellis ...",
+        "partialMatchingImages": [
+          {
+            "url": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/87512/SITours/highlights-of-manhattan-in-a-day-with-statue-of-liberty-and-ellis-in-new-york-641650.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://triprepublic.com/de/product/viator/87512P1",
+        "pageTitle": "Highlights of Manhattan in a Day with &lt;b&gt;Statue of Liberty&lt;/b&gt; and Ellis ...",
+        "partialMatchingImages": [
+          {
+            "url": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/87512/SITours/highlights-of-manhattan-in-a-day-with-statue-of-liberty-and-ellis-in-new-york-641650.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.tutorialathome.in/history/statue-liberty-new-york-usa",
+        "pageTitle": "The &lt;b&gt;Statue of Liberty&lt;/b&gt; - New York, USA - Leading Landmarks",
+        "fullMatchingImages": [
+          {
+            "url": "https://www.tutorialathome.in/postimg/2018/05/statue-of-liberty-03.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://carwad.net/statue-liberty-silhouette",
+        "pageTitle": "&lt;b&gt;Statue Of Liberty&lt;/b&gt; Silhouette Free Download Clip Art - carwad.net",
+        "partialMatchingImages": [
+          {
+            "url": "https://carwad.net/sites/default/files/styles/225x120/public/statue-of-liberty-140328-2551827.jpg?itok=QZ1x2YXP"
+          }
+        ]
+      },
+      {
+        "url": "http://viralmotion.net/news/us/protestor-climbs-the-statue-of-liberty-on-july-4-and-twitter-is-living-for-the-chaos/",
+        "pageTitle": "Protestor Climbs The &lt;b&gt;Statue Of Liberty&lt;/b&gt; On July 4 And Twitter Is ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://cdn.junglecreations.com/wp/junglecms/2018/07/294e90ea-national-park-service.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://tadalafilforsale.net/group/statue-of-liberty/",
+        "pageTitle": "&lt;b&gt;Statue Of Liberty&lt;/b&gt; (69+) Desktop Backgrounds - Wallpapers",
+        "fullMatchingImages": [
+          {
+            "url": "http://tadalafilforsale.net/data/media/50/57313795.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.umb-carom.org/ap/cm/1437P41L9/New-York--New-York-.aspx",
+        "pageTitle": "New York! New York! - UMB",
+        "partialMatchingImages": [
+          {
+            "url": "http://www.umb-carom.org/AP/GetFile.aspx?EFW7UNFCGAef4w5MWqlxMpSiZf5XkFK9"
+          }
+        ]
+      },
+      {
+        "url": "https://www.wefornews.com/woman-climbs-statue-of-liberty-to-protest-immigration-policy/",
+        "pageTitle": "Woman climbs &lt;b&gt;Statue of Liberty&lt;/b&gt; to protest immigration policy ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://www.wefornews.com/wp-content/uploads/2018/07/Statue-of-Liberty.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.viraly.co/protestor-climbs-the-statue-of-liberty-on-july-4-and-twitter-is-living-for-the-chaos/",
+        "pageTitle": "Protestor Climbs The &lt;b&gt;Statue Of Liberty&lt;/b&gt; On July 4 And Twitter Is ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://cdn.junglecreations.com/wp/junglecms/2018/07/294e90ea-national-park-service.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.umb-carom.org/ap/cm/1437P41L18/New-York--New-York-.aspx",
+        "pageTitle": "New York! New York! - UMB",
+        "partialMatchingImages": [
+          {
+            "url": "http://www.umb-carom.org/AP/GetFile.aspx?EFW7UNFCGAef4w5MWqlxMpSiZf5XkFK9"
+          }
+        ]
+      },
+      {
+        "url": "https://tech2.org/bangladesh/black-women-protest-in-the-statue-of-liberty/",
+        "pageTitle": "Black women protest in the &lt;b&gt;Statue of Liberty&lt;/b&gt; – TECH2",
+        "partialMatchingImages": [
+          {
+            "url": "https://ntv-bn-cdn.s3.amazonaws.com/document18/1530775038-liberty-3.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.tripedia.com/search?location_id=222&amp;type=tour",
+        "pageTitle": "Ruins &lt;b&gt;of&lt;/b&gt; a Forgotten City: Historical Manhattan ... - Tripedia.com",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.tripedia.com/img/145081/400/250"
+          }
+        ]
+      },
+      {
+        "url": "http://www.nafpaktia.com/group/statue-of-liberty/",
+        "pageTitle": "&lt;b&gt;Statue Of Liberty&lt;/b&gt; (69+) &lt;b&gt;Statue Of Liberty&lt;/b&gt; Backgrounds - Wallpapers",
+        "fullMatchingImages": [
+          {
+            "url": "http://www.nafpaktia.com/data/wallpapers/50/896950.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://carwad.net/statue-liberty-drawing",
+        "pageTitle": "&lt;b&gt;Statue Of Liberty&lt;/b&gt; Drawing Free Download Clip Art - carwad.net",
+        "partialMatchingImages": [
+          {
+            "url": "https://carwad.net/sites/default/files/styles/225x120/public/statue-of-liberty-140328-2551827.jpg?itok=QZ1x2YXP"
+          }
+        ]
+      },
+      {
+        "url": "http://dailybuzzclick.com/protestor-climbs-the-statue-of-liberty-on-july-4-and-twitter-is-living-for-the-chaos/",
+        "pageTitle": "Protestor Climbs The &lt;b&gt;Statue Of Liberty&lt;/b&gt; On July 4 And Twitter Is ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://cdn.junglecreations.com/wp/junglecms/2018/07/294e90ea-national-park-service.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://twitter.com/WVFDW/status/1014130424514273280",
+        "pageTitle": "WV Democratic Women on Twitter: &amp;quot;On July 3, 1986, after appointing ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://pbs.twimg.com/media/DhLqPwwUcAIFHy1.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pinterest.com/pin/144255994287218117/",
+        "pageTitle": "&lt;b&gt;Statue of&lt;/b&gt; Sam By cheezguyty on Worth1000.com | The &lt;b&gt;Statue&lt;/b&gt; ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://i.pinimg.com/236x/4b/b0/46/4bb0468fa0dbe79268e3b0ff94fa4365.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pinterest.com/pin/568509152952943805/",
+        "pageTitle": "I got this tattoo of The &lt;b&gt;Statue Of Liberty&lt;/b&gt; with a tear coming down her ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://i.pinimg.com/236x/4b/b0/46/4bb0468fa0dbe79268e3b0ff94fa4365.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://userdied.com/?p=256",
+        "pageTitle": "&lt;b&gt;statue of liberty&lt;/b&gt; | woman protest | information - Userdied.com",
+        "fullMatchingImages": [
+          {
+            "url": "http://userdied.com/wp-content/uploads/2018/07/download-1-4.jpeg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.groupdestinations.com/2018_one_day_tours",
+        "pageTitle": "Group Destinations Unlimited - One Day Tours",
+        "fullMatchingImages": [
+          {
+            "url": "http://www.groupdestinations.com/yahoo_site_admin/assets/images/statue.186135301_std.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://www.newsheads.in/world/news/us-government-shutdown-statue-of-liberty-to-reopen-on-monday-article-11573.html",
+        "pageTitle": "US Government shutdown: &lt;b&gt;Statue of Liberty&lt;/b&gt; to reopen on Monday ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://du6lf1l3076ae.cloudfront.net/media/images/2018/01/22/669486374-statue-of-liberty.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://newyorkcityhotspots.com/places/united-states/new-york/new-york-city/attractions/statue-of-liberty/",
+        "pageTitle": "&lt;b&gt;Statue of Liberty&lt;/b&gt; - New York City Hot Spots | If You&amp;#39;re Hot, You&amp;#39;re Here!",
+        "fullMatchingImages": [
+          {
+            "url": "https://newyorkcityhotspots.com/wp-content/uploads/2018/02/27_89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://en.zopix.net/gallery/131328-statue-of-liberty-new",
+        "pageTitle": "Wallpaper download: &lt;b&gt;Statue Liberty&lt;/b&gt; New York Landmark - Free HD ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://en.zopix.net/image_upload/thumb/200h_130105.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://brooklynbridgerealty.com/2018/07/04/happy-independence-day/",
+        "pageTitle": "Happy Independence Day! - Brooklyn Bridge Realty",
+        "fullMatchingImages": [
+          {
+            "url": "http://brooklynbridgerealty.com/wp-content/uploads/2018/06/Statue-of-Liberty.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://twitter.com/ColumbiaBugle/status/1004486931147735040",
+        "pageTitle": "The Columbia Bugle on Twitter: &amp;quot;A history lesson on the &lt;b&gt;Statue of&lt;/b&gt; ...",
+        "fullMatchingImages": [
+          {
+            "url": "https://pbs.twimg.com/media/DfClOouU8AA99sW.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.topguide24.com/fr/tour/etats-unis/new-york/?_sortBy=ratingASC&amp;_page=33",
+        "pageTitle": "Réserver des excursions et des visites à New York » Topguide24.com",
+        "partialMatchingImages": [
+          {
+            "url": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/87512/SITours/highlights-of-manhattan-in-a-day-with-statue-of-liberty-and-ellis-in-new-york-641650.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://franksgourmetgrille.com/inside-the-statue-of-liberty-pictures/inside-the-statue-of-liberty-pictures-inspirational-photographs-inside-the-statue-of-liberty/",
+        "pageTitle": "Inside the &lt;b&gt;Statue Of Liberty&lt;/b&gt; Pictures Inspirational Photographs ...",
+        "partialMatchingImages": [
+          {
+            "url": "http://franksgourmetgrille.com/wp-content/uploads/2018/04/inside-the-statue-of-liberty-pictures-superb-photographs-when-visiting-kiev-a-must-see-is-the-statue-mother-motherland-of-inside-the-statue-of-liberty-pictures.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://franksgourmetgrille.com/inside-the-statue-of-liberty-pictures/inside-the-statue-of-liberty-pictures-lovely-photographs-abym-49-never-spill-your-beer/",
+        "pageTitle": "Inside the &lt;b&gt;Statue Of Liberty&lt;/b&gt; Pictures Lovely Photographs Abym 49 ...",
+        "partialMatchingImages": [
+          {
+            "url": "http://franksgourmetgrille.com/wp-content/uploads/2018/04/inside-the-statue-of-liberty-pictures-superb-photographs-when-visiting-kiev-a-must-see-is-the-statue-mother-motherland-of-inside-the-statue-of-liberty-pictures.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://finalentourage.com/hot/unlock-the-amazing-facts-about-the-statue-of-liberty/",
+        "pageTitle": "Unlock the Amazing Facts about The &lt;b&gt;Statue of Liberty&lt;/b&gt; – Final ...",
+        "fullMatchingImages": [
+          {
+            "url": "http://finalentourage.com/wp-content/uploads/2018/02/lib1.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://incrediblenat.com/10-best-tourist-attractions-of-new-york-city/",
+        "pageTitle": "10 Best Tourist Attractions &lt;b&gt;of&lt;/b&gt; New York City - Incredible Nature",
+        "fullMatchingImages": [
+          {
+            "url": "https://www.nps.gov/common/uploads/grid_builder/ner/crop16_9/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://imgflip.com/memesearch?q=liberal&amp;page=9",
+        "pageTitle": "Meme Search - Meme Template Search - Imgflip",
+        "fullMatchingImages": [
+          {
+            "url": "https://i.imgflip.com/232vmt.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://geniusworld.biz/EAMND-USA%20East%20Coast",
+        "pageTitle": "Genius World",
+        "fullMatchingImages": [
+          {
+            "url": "http://geniusworld.biz/viewImage.ashx?flashImg=126"
+          }
+        ]
+      },
+      {
+        "url": "http://www.upaweaverham.org/Content/OurClasses/Default.aspx?Section=268",
+        "pageTitle": "University Academy - Year Four &amp;amp; Five (FA)",
+        "fullMatchingImages": [
+          {
+            "url": "http://www.upaweaverham.org/Images/ImageRepository/year_4_5_fa/3_lib.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://geniusworld.biz/WAMND-Womens%20SpeciaL%20USA%20East%20Coast",
+        "pageTitle": "Genius World",
+        "fullMatchingImages": [
+          {
+            "url": "http://geniusworld.biz/viewImage.ashx?flashImg=126"
+          }
+        ]
+      },
+      {
+        "url": "http://recipelar.com/statue+of+liberty+mandela+effect.html",
+        "pageTitle": "&lt;b&gt;statue of liberty&lt;/b&gt; mandela effect - Recipelar",
+        "fullMatchingImages": [
+          {
+            "url": "https://2.bp.blogspot.com/-BW5vkQNcCts/WnZp0OzL18I/AAAAAAAADrc/PZKDkUBK3k41GqadEwTKfGKNGOR-mmD7gCLcBGAs/s1600/sl+figure.png"
+          }
+        ]
+      },
+      {
+        "url": "http://newswakers.com/liberty-enlightening-the-world/",
+        "pageTitle": "&lt;b&gt;Liberty&lt;/b&gt; Enlightening the World | News Wakers",
+        "fullMatchingImages": [
+          {
+            "url": "http://newswakers.com/wp-content/uploads/2018/03/liberty.jpg"
+          }
+        ]
+      },
+      {
+        "url": "http://www.topguide24.com/de/tour/vereinigte-staaten-von-amerika/new-york/?_sortBy=priceDESC&amp;_page=43",
+        "pageTitle": "Touren und Ausflüge in New York buchen » Topguide24.com",
+        "partialMatchingImages": [
+          {
+            "url": "http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/87512/SITours/highlights-of-manhattan-in-a-day-with-statue-of-liberty-and-ellis-in-new-york-641650.jpg"
+          }
+        ]
+      }
+    ],
+    "visuallySimilarImages": [
+      {
+        "url": "https://www.nps.gov/common/uploads/grid_builder/ner/crop16_9/89721987-1DD8-B71B-0BE77EEAE39E0520.jpg?width=950&amp;quality=90&amp;mode=crop"
+      },
+      {
+        "url": "https://sites.google.com/site/unitedstatesmonuments/_/rsrc/1505156353651/home/statue-of-liberty/statue-liberty-feature-use.jpg"
+      },
+      {
+        "url": "https://greatfrumtrips.com/wp-content/uploads/2016/12/GreatfrumTrips.com-Statue-Liberty-Tour3.jpg"
+      },
+      {
+        "url": "https://thumbs.dreamstime.com/b/nyc-new-york-city-statue-liberty-liberty-island-statue-liberty-national-monument-museum-statue-liberty-island-114657713.jpg"
+      },
+      {
+        "url": "http://www.fansshare.com/image/thestatueofliberty/statue-liberty-important-de-ed-domaincxaosaskcom-the-statue-of-liberty-687154713.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/0327New_York_City_Statue_of_Liberty.JPG"
+      },
+      {
+        "url": "http://qimplink.com/wp-content/uploads/2017/12/Pictures-Of-Statue-Liberty-Photos-High-Resolution-For-Androids-Photo-Gallery-The-Ellis.jpg"
+      },
+      {
+        "url": "https://www.cnewyork.com/wp-content/uploads/sites/2/2016/10/statue-liberty-new-york-1.jpg"
+      }
+    ],
+    "bestGuessLabels": [
+      {
+        "label": "statue of liberty"
+      }
+    ]
+  }
+}
