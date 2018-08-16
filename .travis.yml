@@ -11,11 +11,10 @@ notifications:
   email:
     on_success: change # default: change (only when going from broken to fixed)
     on_failure: always # default: always (which is annoying, as it should be)
-before_install: cd web
 install:
   - npm ci # faster, goes only from package-lock
 before_script:
-  - psql -c 'create database "boilermaker-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
+  - psql -c 'create database "myed-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
 
 before_deploy:
   - npm run build-client # make the bundle
@@ -24,6 +23,5 @@ deploy:
   skip_cleanup: true # prevents travis from deleting the build
   provider: heroku
   app: whatsthat-capstone
- # see README
   api_key:
-    secure: "yPVfLMqWXLRubselhmUrP0sWNhcRTBaU1XI3TDNWt+C1Th+gHYY6vy6Pm+t/Paf2CLgRCih+xeIHxd/nqyMcCFN4bidZzaU6EoGtkwvATWh5k3ss70Qq8qtVlqUHCXdNK16roUbXbRmISCYYCQWqWv45IqzK80z4Kj59t7EU+L1XL7C55E5kXx0vOnRQSKN8q21ckvZggj6uBsJe+JElf0/1wzXH8eflwswmcJz7WPZbDEDttfl9u9kczZrYrGR9fqT5PwHVnIpZVhzZTpIlXJtC3cPjDiDiW5nTPvzvnDS06m1ArUU3/XuwJrwGuipF7+66OvMLUxefcw9/JDup08CiFZJC52qt8nZlN+glkR3+9lWGybzdlRcSVq8npsAWhGS1HDMjB3YvDzO5YFuSQIp3ck9uG61IQm94PXo0mzg9ZruYgSqJKZR7wHLftVsrddnheB6cN1+Zzde6Iktgdpt64gs6FjaJ0m3O3tflDJS1Byf4MmuFdgvSmaKtS/1sgyvjbboGCbUyxx1dkCmgY9KxOUEehLciY26DKlvlGZSYs1fifIP6bjGIbp40GF5+mAfNcklSL66bPaZc9Kw+I8Kmj+d+BlkYPW+P67pE12JBVYyFs7hzEalPR9y8KCiz3cwnwbrhDBzpCMUSxKT6l5TuflNt2huceVG0qNXI+8E=" # see README
+    secure: "jI3snJvY/oLGRUtgqmDeu67wD1j739O8uyYywTX0O3EeJ19Ho9Eic6JVjSy7EjAvL+I4faLYC1BKqa4UtzmkLjNfMXEs7Ivqvv2zflaqoJL6glafWGTWuQjuIaHKyR8sgsRGW8vObM49BivdvxMP8/ZP3LS1SJvSe2iRKgryxt3iD1CTxI+dMA0+866F11xAJw3DnmCt2H75Wd7L9fJxHv3L4dHVE/UAy9IC0fCZuEWLC1m/SBqBXJWWulMZfi/c/zwHnG2had2Yum/aABgU+8kzKE/Clc0ex9ZjAvgISS3m0e2KSIVzOWZD5iq3kQmjbAerjpBWnQvIxv+CTKNSsKCdsZ9QdNuD04XFAIp/NfO1TeU2DvAbkvO8/8B+Lu03T37BSANPvrZFx3KRLzZBSQUA0J4cUAT+D3UgZX2kn9sjtJ0WsxRL6szDiAAx8AYZAuIv+f5lCy3KEheMHv40ooCKAv58Tn1BgxiLAUCrEQx4dnunbunm7IfR7bESMzbW6N7uWC5d921isyMqiuXcMKmCtMd7HN3zCcgaABk3cYQHQKszDzyR0EYCMCB1XjLmrxlWHmvvkNonVE7efVr8SM8VfU3SUh3WPmxB7BYNQceSdtiND9z2HAk/KSvMg3oCW9NoXrbLDeyyNzELf9jORv+B4MEBcUuiqslgWMjUn2E=" # see README
