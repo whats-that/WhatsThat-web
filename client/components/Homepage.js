@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 
-class HomePage extends Component {
+export default class HomePage extends Component {
   componentDidMount() {}
   render() {
     return (
@@ -22,12 +20,4 @@ class HomePage extends Component {
   }
 }
 
-const mapState = state => ({
-  subjects: state.subjects
-})
 
-const mapDispatch = dispatch => ({
-  fetchSubjects: () => dispatch(fetchSubjects())
-})
-
-export default connect(mapState, mapDispatch)(HomePage)

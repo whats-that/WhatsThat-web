@@ -129,9 +129,11 @@ form div {
   /* width: calc(100% * (1 / 4) - 10px - 1px); */
   /* flex: 1 1 25%; */
 }
+
 .eachDiv:nth-child(even) {
 	margin: 0px 15px 13px 13px;
 }
+
 .eachDiv:nth-child(odd) {
 	margin: 0px 7px 7px 0px;
 }
@@ -149,10 +151,12 @@ form div {
   border-radius: 4px;
   box-shadow: 0 5px 10px 5px rgba(84, 85, 85, 0.3);
 }
+
 .form-title {
   font-family: fantasy;
   color: white;
 }
+
 .form-wrapper {
   width: 340px;
   margin: 0px auto;
@@ -160,14 +164,17 @@ form div {
   display: flex;
   flex-direction: column;
 }
+
 .input-box {
   width: 280px;
   height: 45px;
 }
+
 .input-text {
   font-size: 20px;
   color: white;
 }
+
 .btn-info-own {
   width: 280px;
   height: 45px;
@@ -185,6 +192,7 @@ form div {
   font-size: 14px;
   background-color: #d34836;
 }
+
 .btn-info-facebook {
   color: white;
   width: 280px;
@@ -192,4 +200,15 @@ form div {
   height: 45px;
   font-size: 14px;
   background-color: #3b5998;
+}
+
+
+.mine-data-wrapper {
+  text-align: center;
+
+}
+
+.mine-data-title {
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

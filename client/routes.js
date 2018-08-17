@@ -5,9 +5,6 @@ import PropTypes from 'prop-types'
 import {Login, Signup, UserHome, Homepage, About, Mine} from './components'
 import {me} from './store'
 
-/**
- * COMPONENT
- */
 class Routes extends Component {
   componentDidMount() {
     this.props.loadInitialData()
@@ -30,8 +27,6 @@ class Routes extends Component {
             <Route path="/mine" component={Mine} />
           </Switch>
         )}
-        {/* Displays our Login component as a fallback */}
-        <Route component={Login} />
       </Switch>
     )
   }

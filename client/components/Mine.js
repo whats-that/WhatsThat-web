@@ -7,18 +7,21 @@ class Mine extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="bgimage" />
-        <div className="bg-bottom">
+        <div className="mine-data-wrapper">
+          <div className="mine-data-title">My Places</div>
+          <div>...</div>
+          <div className="mine-data-title">My Things</div>
+          <div>...</div>
+          <div className="mine-data-title">My People</div>
+          <div>...</div>
         </div>
       </React.Fragment>
     )
   }
 }
 
-const mapState = state => ({
-})
+const mapState = state => ({})
 
-const mapDispatch = dispatch => ({
-})
+const mapDispatch = dispatch => ({})
 
 export default connect(mapState, mapDispatch)(Mine)
