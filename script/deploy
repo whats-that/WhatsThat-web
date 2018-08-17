@@ -40,9 +40,6 @@ git add -f public/bundle.js public/bundle.js.map
 
 # create a commit, even if nothing changed
 git commit --allow-empty -m 'Deploying'
-cd ../
 
 # push your local "deploy" branch to the "master" branch on heroku
-# git push --force heroku deploy:master
-
-git push heroku `git subtree split --prefix web deploy`:master --force
+git push --force heroku deploy:master
