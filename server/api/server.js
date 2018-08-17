@@ -1,48 +1,13 @@
 const router = require('express').Router()
 module.exports = router
 const googleResponse = require('./sampleResponse')
-// Imports the Google Cloud client library.
-// const Storage = require('@google-cloud/storage')
-// Imports the Google Cloud client library
 const vision = require('@google-cloud/vision')
-// const filename = '/Users/song/Workspace/images/bryant1.jpg'
-const bucketName = 'whatsthat'
-
-// // middleware that does not modify the response body
-// var doesNotModifyBody = function(request, response, next) {
-//   request.params = {
-//     a: "b"
-//   };
-//   // calls next because it hasn't modified the header
-//   next();
-// };
-// // middleware that modify the response body
-// var doesModifyBody = function(request, response, next) {
-//   response.setHeader("Content-Type", "text/html");
-//   response.write("<p>Hello World</p>");
-//   response.end();
-//   // doesn't call next()
-// };
-// router.use(doesNotModifyBody);
-// router.use(doesModifyBody);
-
-router.post('/', async (req, res, next) => {
-  //you better fucking change this back to post before you push
-  try {
-    // const res = await axios.post('', req.body)
-    console.log('hello')
-    console.log(req.body)
-    const bestGuess = googleResponse.webDetection.bestGuessLabels[0].label //change googleResponse to actual Google response, when available
-    res.send(bestGuess)
-  } catch (err) {
-    next(err)
-  }
-})
+// const Storage = require('@google-cloud/storage')
+// const bucketName = 'whatsthat'
 
 router.post('/getDataFromGoogleAPI', (req, res, next) => {
   const client = new vision.ImageAnnotatorClient()
   const blob = req.body.base64
-
   var img = `data:image/png;base64,${blob}`
   let base64Data = img.replace(/^data:image\/png;base64,/, '')
   let binaryData = new Buffer.from(base64Data, 'base64').toString('binary')
@@ -79,11 +44,12 @@ router.post('/getDataFromGoogleAPI', (req, res, next) => {
       console.log('Process Completed... ')
       // console.error('ERROR..:', err)
     })
-
-
-
 })
 
+
+/* =========================================================== */
+
+/* to test Google API */
 router.get('/getDataFromGoogleAPI', (req, res, next) => {
   const client = new vision.ImageAnnotatorClient()
   const filename =
@@ -204,6 +170,22 @@ router.get('/getDataFromGoogleAPI', (req, res, next) => {
   //   })
 })
 
+
+
+router.post('/', async (req, res, next) => {
+  //you better fucking change this back to post before you push
+  try {
+    // const res = await axios.post('', req.body)
+    console.log('hello')
+    console.log(req.body)
+    const bestGuess = googleResponse.webDetection.bestGuessLabels[0].label //change googleResponse to actual Google response, when available
+    res.send(bestGuess)
+  } catch (err) {
+    next(err)
+  }
+})
+
+/* incase we need to use bucket */
 // router.post('/savePicToBucket', (req, res, next) => {
 //   // Creates a client
 //   const storage = new Storage()
@@ -238,3 +220,22 @@ router.get('/getDataFromGoogleAPI', (req, res, next) => {
 //     })
 //   res.send('store picture to the bucket ...  ')
 // })
+
+/* middleware to deal with header issue */
+// // middleware that does not modify the response body
+// var doesNotModifyBody = function(request, response, next) {
+//   request.params = {
+//     a: "b"
+//   };
+//   // calls next because it hasn't modified the header
+//   next();
+// };
+// // middleware that modify the response body
+// var doesModifyBody = function(request, response, next) {
+//   response.setHeader("Content-Type", "text/html");
+//   response.write("<p>Hello World</p>");
+//   response.end();
+//   // doesn't call next()
+// };
+// router.use(doesNotModifyBody);
+// router.use(doesModifyBody);
