@@ -2,7 +2,7 @@ const router = require('express').Router()
 module.exports = router
 const googleResponse = require('./sampleResponse')
 // Imports the Google Cloud client library.
-const Storage = require('@google-cloud/storage')
+// const Storage = require('@google-cloud/storage')
 // Imports the Google Cloud client library
 const vision = require('@google-cloud/vision')
 // const filename = '/Users/song/Workspace/images/bryant1.jpg'
