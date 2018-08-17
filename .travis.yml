@@ -14,7 +14,11 @@ notifications:
 install:
   - npm ci # faster, goes only from package-lock
 before_script:
+<<<<<<< HEAD
+  - psql -c 'create database "boilermaker-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
+=======
   - psql -c 'create database "whatsthat-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
+>>>>>>> new/googleVisionAPI
 
 before_deploy:
   - npm run build-client # make the bundle
@@ -23,5 +27,11 @@ deploy:
   skip_cleanup: true # prevents travis from deleting the build
   provider: heroku
   app: whatsthat-capstone
+<<<<<<< HEAD
+ # see README
+  api_key:
+    secure: "yPVfLMqWXLRubselhmUrP0sWNhcRTBaU1XI3TDNWt+C1Th+gHYY6vy6Pm+t/Paf2CLgRCih+xeIHxd/nqyMcCFN4bidZzaU6EoGtkwvATWh5k3ss70Qq8qtVlqUHCXdNK16roUbXbRmISCYYCQWqWv45IqzK80z4Kj59t7EU+L1XL7C55E5kXx0vOnRQSKN8q21ckvZggj6uBsJe+JElf0/1wzXH8eflwswmcJz7WPZbDEDttfl9u9kczZrYrGR9fqT5PwHVnIpZVhzZTpIlXJtC3cPjDiDiW5nTPvzvnDS06m1ArUU3/XuwJrwGuipF7+66OvMLUxefcw9/JDup08CiFZJC52qt8nZlN+glkR3+9lWGybzdlRcSVq8npsAWhGS1HDMjB3YvDzO5YFuSQIp3ck9uG61IQm94PXo0mzg9ZruYgSqJKZR7wHLftVsrddnheB6cN1+Zzde6Iktgdpt64gs6FjaJ0m3O3tflDJS1Byf4MmuFdgvSmaKtS/1sgyvjbboGCbUyxx1dkCmgY9KxOUEehLciY26DKlvlGZSYs1fifIP6bjGIbp40GF5+mAfNcklSL66bPaZc9Kw+I8Kmj+d+BlkYPW+P67pE12JBVYyFs7hzEalPR9y8KCiz3cwnwbrhDBzpCMUSxKT6l5TuflNt2huceVG0qNXI+8E=" # see README
+=======
   api_key:
     secure: "G7hJKoSd+Wrv9hCpapw+0AcLdGIvRWeclae6bTLPHXbM002I4REzq2jajJNs/WeEEoaUwVJswl7hEXeMbixK7JHT11+WxmWmNsN2Ejv2F5XtGt3ZusWCVMmW0r2qWhvhm3jLynD7ZDoMbPh8ZCHZd49xDc1nCDCV6QY/tNNmH9kizfe4MxenNzOYlOrD9wDJKSAwiIzAxv98/L7DJj3CPMXZWgiBhtQCnlsDlFRzQuSy/rM/h0HBTqcUwDY32GOpEw1j0FrZL2atVWArTpXwGSV5aQ2afQBjsrIyvyvGXNKhkM4VtI05G4nC4tZydyT9kz6gvkbvbO5q9xYY9arn272mVd58vT9w7zmlfnqVagYqy1qfmHhWlDZYbjOGZ+uSp+hs8KFToWRCC35ptrVHb7VvpD0Vg1oybHb2E6AcKDRSfZ55kODh2oSmL/ech7ivZhlwjiMgugyNk+Pp6d3PjVApEbhnf5E/xIYbi7uao3LElDA8Ye6/ie04F3GS29X9hSMNDP2O+QClTA8HkdM23n1ESVTxn6TWxZpviweymjXLddoXqcwnV0fUec4cz1zKmaaS/4T+UR9mAQ06T5BaQfkUXtj3kz670V6mnDV5hMZAs/fG/3Fj3Ec5LYZZ1ecH2GznVecmozTEVceN0p52V8AuDMDUL3eL6tXDg4kEfZE=" # see README
+>>>>>>> new/googleVisionAPI

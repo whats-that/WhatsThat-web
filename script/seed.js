@@ -1,8 +1,19 @@
 'use strict'
 
 const db = require('../server/db')
-const {User} = require('../server/db/models')
-
+const {User, Landmark} = require('../server/db/models')
+const {one, two} = require('./blobs')
+/**
+ * Welcome to the seed file! This seed file uses a newer language feature called...
+ *
+ *                  -=-= ASYNC...AWAIT -=-=
+ *
+ * Async-await is a joy to use! Read more about it in the MDN docs:
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+ *
+ * Now that you've got the main idea, check it out in practice below!
+ */
 async function seed() {
   await db.sync({force: true})
   console.log('db synced!')
@@ -28,6 +39,13 @@ async function seed() {
 
   ])
   console.log(`seeded ${users.length} users`)
+
+  const landmarks = await Promise.all([
+    Landmark.create({name: 'one', rating: 4, image: one.base64, userId: 1}),
+    Landmark.create({name: 'two', image: two.base64, userId: 1})
+  ])
+
+  console.log(`seeded ${landmarks.length} landmarks`)
   console.log(`seeded successfully`)
 }
 
