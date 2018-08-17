@@ -5,28 +5,52 @@ import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
-    <h1>BOILERPLATE</h1>
-    <nav>
-      {isLoggedIn ? (
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
+  <React.Fragment>
+    {isLoggedIn ? (
+      <div>
+        <div className="ui pointing transparent massive white fluid four pointed transparent menu">
+          <Link to={'/'}>
+          <div className="item"><i className="photo icon"></i> WhatThat</div>
+          </Link>
+          <div className="right menu">
+            <Link to="/about">
+              <div className="item">About</div>
+            </Link>
+            <Link to={'/mine'}>
+              <div className="item">Mine</div>
+            </Link>
+            <Link to={'/'}>
+              <div onClick={handleClick} className="item">
+                Logout
+              </div>
+            </Link>
+          </div>
         </div>
-      ) : (
-        <div>
-          {/* The navbar will show these links before you log in */}
-          <div>hel</div>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+      </div>
+    ) : (
+      <div>
+        <div className="ui pointing transparent massive white fluid four pointed transparent menu">
+          <Link to={'/'}>
+            <div className="item"><i className="photo icon"></i> WhatThat</div>
+          </Link>
+          <div className="right menu">
+            {/* <Link to="/test">
+                  <div className="item">Test</div>
+                </Link> */}
+            <Link to="/about">
+              <div className="item">About</div>
+            </Link>
+            <Link to="/login">
+              <div className="item">Login</div>
+            </Link>
+            <Link to="/signup">
+              <div className="item">Sign Up</div>
+            </Link>
+          </div>
         </div>
-      )}
-    </nav>
-    <hr />
-  </div>
+      </div>
+    )}
+  </React.Fragment>
 )
 
 /**

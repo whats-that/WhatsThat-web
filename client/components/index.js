@@ -6,3 +6,6 @@
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
 export {Login, Signup} from './auth-form' // use different names for one component
+export {default as Homepage} from './Homepage'
+export {default as About} from './About'
+export {default as Mine} from './Mine'

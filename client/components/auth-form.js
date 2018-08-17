@@ -3,45 +3,48 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {auth} from '../store'
 
-/**
- * COMPONENT
- */
 const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} name={name}>
-        <div>
-          <label htmlFor="email">
-            <small>Email</small>
-          </label>
-          <input name="email" type="text" />
+    <div className="form">
+      <form onSubmit={handleSubmit} name={name} className="form-wrapper">
+        <div className="form-title">
+          <h1>WhatsThat {displayName}</h1>
         </div>
         <div>
-          <label htmlFor="password">
-            <small>Password</small>
+          <label htmlFor="email" className="input-text">
+            Email
           </label>
-          <input name="password" type="password" />
+          <input name="email" type="text" className="input-box" />
         </div>
         <div>
-          <button type="submit">{displayName}</button>
+          <label htmlFor="password" className="input-text">
+            Password
+          </label>
+          <input name="password" type="password" className="input-box" />
+        </div>
+        <div>
+          <button type="submit" className="btn btn-info-own">
+            {displayName}
+          </button>
         </div>
         {error && error.response && <div> {error.response.data} </div>}
+        <div>
+          <a href="/auth/google" className="btn btn-info">
+            {displayName} with Google
+          </a>
+        </div>
+        <div>
+          <a href="/auth/facebook" className="btn btn-info-facebook">
+            {displayName} with Facebook
+          </a>
+        </div>
       </form>
-      <a href="/auth/google">{displayName} with Google</a>
     </div>
   )
 }
 
-/**
- * CONTAINER
- *   Note that we have two different sets of 'mapStateToProps' functions -
- *   one for Login, and one for Signup. However, they share the same 'mapDispatchToProps'
- *   function, and share the same Component. This is a good example of how we
- *   can stay DRY with interfaces that are very similar to each other!
- */
-// can create prop not using store
 const mapLogin = state => {
   return {
     name: 'login',
@@ -73,9 +76,6 @@ const mapDispatch = dispatch => {
 export const Login = connect(mapLogin, mapDispatch)(AuthForm)
 export const Signup = connect(mapSignup, mapDispatch)(AuthForm)
 
-/**
- * PROP TYPES
- */
 AuthForm.propTypes = {
   name: PropTypes.string.isRequired,
   displayName: PropTypes.string.isRequired,
