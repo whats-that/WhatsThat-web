@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {User} = require('../db/models')
+const { User, Landmark } = require('../db/models')
 module.exports = router
 
 router.get('/', async (req, res, next) => {
@@ -13,7 +13,21 @@ router.get('/', async (req, res, next) => {
   }
 })
 
-// React Native server
+router.get('/:userId/history', async (req, res, next) => {
+  try {
+    console.log('user is...!:', req.params.userId)
+    const landmarks = await Landmark.findAll({
+      where: {
+        userId: req.params.userId
+      },
+      attributes: ['id', 'name', 'rating']
+    })
+    res.json(landmarks)
+  } catch (error) {
+    next(error)
+  }
+})
+
 router.post('/login', async (req, res, next) => {
   try {
     const user = await User.findOne({
@@ -23,10 +37,8 @@ router.post('/login', async (req, res, next) => {
       var userId = String(user.dataValues.id)
     }
     if (!user) {
-      console.log('No such user found:', req.body.email)
       res.status(401).send({success: false, message: 'Wrong username'})
     } else if (!user.correctPassword(req.body.password)) {
-      console.log('Incorrect password for user:', req.body.email)
       res.status(401).send({success: false, message: 'Wrong password'})
     } else {
       res.send({success: true, userId: userId, email: req.body.email})
@@ -38,7 +50,6 @@ router.post('/login', async (req, res, next) => {
 
 router.post('/signup', async (req, res, next) => {
   try {
-    console.log(req.body)
     const user = await User.create(req.body)
     const userId = String(user.dataValues.id)
     res.send({success: true, userId: userId, email: req.body.email})

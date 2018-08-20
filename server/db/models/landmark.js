@@ -28,15 +28,3 @@ const Landmark = db.define('landmark', {
 })
 
 module.exports = Landmark
-
-/*
-image: {
-  type: Sequelize.BLOB
-},
-coordinates: {
-  type: Sequelize.ARRAY(Sequelize.FLOAT)
-}
-})
-
-module.exports = LandMark
-*/

@@ -163,6 +163,8 @@ router.get('/getDataFromGoogleAPI', (req, res, next) => {
         res.send(landmark.description)
       })
     })
+        .catch(err => {
+          console.error('ERROR:', err)
 
     // .labelDetection(filename)
     // .then(results => {
@@ -171,81 +173,7 @@ router.get('/getDataFromGoogleAPI', (req, res, next) => {
     //   console.log('Results:', results)
     //   // labels.forEach(label => console.log(label.description))
     // })
-    .catch(err => {
-      console.error('ERROR:', err)
-    })
-  // res.send('get data from google API ...  ')
-})
-
-router.get('/history', async (req, res, next) => {
-  try {
-    const landmarks = await Landmark.findAll({
-      where: {
-        userId: 1
-      },
-      attributes: ['id', 'name', 'rating', 'comment']
-    })
-    res.json(landmarks)
-  } catch (error) {
-    next(error)
-  }
-})
-
-router.get('/history/:id', async (req, res, next) => {
-  try {
-    console.log(req.params.id)
-    const landmark = await Landmark.findById(req.params.id)
-    res.json(landmark)
-  } catch (error) {
-    next(error)
-  }
+  })
 })
 
 module.exports = router
-// router.get('/savePicToBucket', (req, res, next) => {
-//   // Creates a client
-//   const storage = new Storage()
-//   // Uploads a local file to the bucket
-//   storage
-//     .bucket(bucketName)
-//     .upload(filename, {
-//       // Support for HTTP requests made with `Accept-Encoding: gzip`
-//       gzip: true,
-//       metadata: {
-//         // Enable long-lived HTTP caching headers
-//         // Use only if the contents of the file will never change
-//         // (If the contents will change, use cacheControl: 'no-cache')
-//         cacheControl: 'public, max-age=31536000'
-//       }
-//     })
-//     .then(() => {
-//       console.log(`${filename} uploaded to ${bucketName}.`)
-//     })
-//     .catch(err => {
-//       console.error('ERROR:', err)
-//     })
-//   res.send('store picture to the bucket ...  ')
-// })
-
-// const logoDetectionResult = await client.logoDetection(filename)
-// console.log(landmark.description)
-// console.log(landmark.locations[0].latLng) // e.g. {latitude: 40.718639, longitude: -74.013519}
-
-/* middleware to deal with header issue */
-// // middleware that does not modify the response body
-// var doesNotModifyBody = function(request, response, next) {
-//   request.params = {
-//     a: "b"
-//   };
-//   // calls next because it hasn't modified the header
-//   next();
-// };
-// // middleware that modify the response body
-// var doesModifyBody = function(request, response, next) {
-//   response.setHeader("Content-Type", "text/html");
-//   response.write("<p>Hello World</p>");
-//   response.end();
-//   // doesn't call next()
-// };
-// router.use(doesNotModifyBody);
-// router.use(doesModifyBody);
