@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User, Landmark} = require('../server/db/models')
+const {User, Landmark, Thing} = require('../server/db/models')
 const {one, two} = require('./blobs')
 /**
  * Welcome to the seed file! This seed file uses a newer language feature called...
@@ -39,7 +39,6 @@ async function seed() {
 
   ])
   console.log(`seeded ${users.length} users`)
-
   const landmarks = await Promise.all([
     Landmark.create({name: 'one', rating: 4, image: one.base64, userId: 1}),
     Landmark.create({name: 'two', image: two.base64, userId: 1})

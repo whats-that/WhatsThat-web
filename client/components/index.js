@@ -9,3 +9,4 @@ export {Login, Signup} from './auth-form' // use different names for one compone
 export {default as Homepage} from './Homepage'
 export {default as About} from './About'
 export {default as Mine} from './Mine'
+export {default as Test} from './Test'

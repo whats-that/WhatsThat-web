@@ -12,7 +12,7 @@ export default class HomePage extends Component {
             <div className="homepage-text">Curious About WhatsThat?</div>
             <div className="homepage-text">Are You Traveling?</div>
             <div className="homepage-text">Take a Photo,</div>
-            <div className="homepage-text">Then, You Will Get the Answer!</div>
+            <div className="homepage-text">{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}{'\u00a0'}Then, You Will Get the Answer!</div>
           </div>
         </div>
       </React.Fragment>

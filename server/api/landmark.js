@@ -33,7 +33,8 @@ router.post('/', async (req, res, next) => {
       name: req.body.name,
       image: req.body.image,
       coordinates: req.body.coordinates,
-      userId: req.body.userId
+      userId: req.body.userId,
+      accuracy: req.body.accuracy
     })
     res.status(201).json(landmark)
   } catch (err) {

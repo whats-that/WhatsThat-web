@@ -10,11 +10,16 @@ const Navbar = ({handleClick, isLoggedIn}) => (
       <div>
         <div className="ui pointing transparent massive white fluid four pointed transparent menu">
           <Link to={'/'}>
-          <div className="item"><i className="photo icon"></i> WhatThat</div>
+            <div className="item">
+              <i className="photo icon" /> WhatThat
+            </div>
           </Link>
           <div className="right menu">
             <Link to="/about">
               <div className="item">About</div>
+            </Link>
+            <Link to="/test">
+              <div className="item">Text</div>
             </Link>
             <Link to={'/mine'}>
               <div className="item">Mine</div>
@@ -31,14 +36,16 @@ const Navbar = ({handleClick, isLoggedIn}) => (
       <div>
         <div className="ui pointing transparent massive white fluid four pointed transparent menu">
           <Link to={'/'}>
-            <div className="item"><i className="photo icon"></i> WhatThat</div>
+            <div className="item">
+              <i className="photo icon" /> WhatThat
+            </div>
           </Link>
           <div className="right menu">
-            {/* <Link to="/test">
-                  <div className="item">Test</div>
-                </Link> */}
             <Link to="/about">
               <div className="item">About</div>
+            </Link>
+            <Link to="/test">
+              <div className="item">Text</div>
             </Link>
             <Link to="/login">
               <div className="item">Login</div>

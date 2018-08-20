@@ -125,7 +125,7 @@ form div {
   flex-grow: 1;
 	flex-shrink: 0;
   /* flex-basis: calc(25% - 10px); */
-  width: 30%;
+  width: 31%;
   /* width: calc(100% * (1 / 4) - 10px - 1px); */
   /* flex: 1 1 25%; */
 }
@@ -211,4 +211,49 @@ form div {
 .mine-data-title {
   font-size: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.test-top {
+  width: 100%;
+  background-color: rgb(243, 243, 243)
+}
+
+.test-ex {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 67px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(12, 12, 12);
+}
+
+.test-ex2 {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 67px;
+  font-family: cursive;
+  font-size: 20px;
+  color: rgb(12, 12, 12);
+}
+
+.test-ex3 {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 67px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  color: rgb(12, 12, 12);
+}
+
+.test-btn {
+  width: 100%;
+  margin-left: 15px
+}
+.test-btn input {
+  margin: 5px;
+  border-radius: 5px;
 }

@@ -21,6 +21,9 @@ const Landmark = db.define('landmark', {
   },
   image: {
     type: Sequelize.TEXT
+  },
+  accuracy: {
+    type: Sequelize.FLOAT
   }
 })
 
