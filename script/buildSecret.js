@@ -7,7 +7,7 @@ fs.writeFile('secrets.json', `{
  "type": "service_account",
  "project_id": "test1-211018",
  "private_key_id": "${process.env.private_key_id}",
- "private_key": "-----BEGIN PRIVATE KEY-----\n${process.env.private_key}\n-----END PRIVATE KEY-----\n",
+ "private_key": "-----BEGIN PRIVATE KEY-----\\n${process.env.private_key}\\n-----END PRIVATE KEY-----\\n",
  "client_email": "whats-that@test1-211018.iam.gserviceaccount.com",
  "client_id": "103346616138126366479",
  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
