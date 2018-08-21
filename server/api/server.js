@@ -146,34 +146,78 @@ router.post('/textToVoice', async (req, res, next) => {
 /* =========================================================== */
 
 /* to test Google API */
-router.get('/getDataFromGoogleAPI', (req, res, next) => {
-  const client = new vision.ImageAnnotatorClient()
-  const filename =
-    '/Users/song/Workspace/FullstackAcademy/senior/whats-that/web/img1.jpg'
+router.get('/getDataFromGoogleAPI', async (req, res, next) => {
+  try {
+    const client = new vision.ImageAnnotatorClient()
+    console.log('Start Google Vision API... ')
+    const filename = path.join(__dirname, '../../img1.jpg')
 
-  client
-    .landmarkDetection(filename)
-    .then(results => {
-      const landmarks = results[0].landmarkAnnotations
-      console.log('Landmarks:')
-      landmarks.forEach(landmark => {
-        console.log(landmark)
-        console.log(landmark.description)
-        console.log(landmark.locations[0].latLng) // e.g. {latitude: 40.718639, longitude: -74.013519}
-        res.send(landmark.description)
-      })
-    })
-        .catch(err => {
-          console.error('ERROR:', err)
+    const [
+      landmarkDectectionResult,
+      webDetectionResult,
+      labelDetectionResult
+    ] = await Promise.all([
+      client.landmarkDetection(filename),
+      client.webDetection(filename),
+      client.labelDetection(filename)
+    ])
 
-    // .labelDetection(filename)
-    // .then(results => {
-    //   const labels = results[0].labelAnnotations
+    console.log('processing...')
+    console.log(
+      'web dection.webEntities ... : ',
+      webDetectionResult[0].webDetection
+    )
+    console.log(
+      'label dection[0].labelAnnotations.. ',
+      labelDetectionResult[0].labelAnnotations[0]
+    )
+    console.log(
+      'web dection visuals ... : ',
+      webDetectionResult[0].webDetection.visuallySimilarImages
+    )
 
-    //   console.log('Results:', results)
-    //   // labels.forEach(label => console.log(label.description))
-    // })
-  })
+    const landmark = landmarkDectectionResult[0].landmarkAnnotations[0]
+    console.log('Landmark Detection Start... ')
+    console.log(landmark)
+
+    // var returnObj = {}
+    //   if (landmark) {
+    //   returnObj = {
+    //     name: landmark.description,
+    //     image: blob,
+    //     coordinates: [
+    //       landmark.locations[0].latLng.latitude,
+    //       landmark.locations[0].latLng.longitude
+    //     ],
+    //     accuracy: Number(landmark.score.toFixed(2)),
+    //     webEntities: webDetectionResult[0].webDetection.webEntities,
+    //     webImages: webDetectionResult[0].webDetection.visuallySimilarImages,
+    //     label: labelDetectionResult[0].labelAnnotations[0]
+    //   }
+    // } else {
+    //   returnObj = {
+    //     webEntities: webDetectionResult[0].webDetection.webEntities,
+    //     webImages: webDetectionResult[0].webDetection.visuallySimilarImages,
+    //     label: labelDetectionResult[0].labelAnnotations[0]
+    //   }
+    // }
+
+    console.log('touch here')
+    res.send("Happy!")
+    res.end()
+  } catch (err) {
+    console.error('Detection Process Completed...')
+  }
+})
+
+router.get('/history/:id', async (req, res, next) => {
+  try {
+    console.log(req.params.id)
+    const landmark = await Landmark.findById(req.params.id)
+    res.json(landmark)
+  } catch (error) {
+    next(error)
+  }
 })
 
 module.exports = router
