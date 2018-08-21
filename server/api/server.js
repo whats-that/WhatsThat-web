@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const router = require('express').Router()
 const path = require('path')
@@ -8,7 +8,7 @@ const vision = require('@google-cloud/vision')
 const textToSpeech = require('@google-cloud/text-to-speech')
 const {Landmark} = require('../db/models')
 
-const { Compute } = require('google-auth-library');
+const {Compute} = require('google-auth-library')
 
 /**
  * Acquire a client, and make a request to an API that's enabled by default.
@@ -18,14 +18,14 @@ async function main() {
     // Specifying the serviceAccountEmail is optional. It will use the default
     // service account if one is not defined.
     serviceAccountEmail: 'heart2529@gmail.com'
-  });
-  const projectId = 'test1-211018';
-  const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`;
-  const res = await client.request({ url });
-  console.log(res.data);
+  })
+  const projectId = 'test1-211018'
+  const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`
+  const res = await client.request({url})
+  console.log(res.data)
 }
 
-main().catch(console.error);
+main().catch(console.error)
 
 router.post('/getDataFromGoogleAPI', async (req, res, next) => {
   try {
@@ -167,7 +167,7 @@ router.post('/textToVoice', async (req, res, next) => {
 /* =========================================================== */
 router.get('/', (req, res, next) => {
   try {
-    res.send('working!')
+    res.send('working...')
   } catch (err) {
     console.error(err)
   }
@@ -180,30 +180,9 @@ router.get('/getDataFromGoogleAPI', async (req, res, next) => {
     console.log('Start Google Vision API... ')
     const filename = path.join(__dirname, '../../img1.jpg')
 
-    const [
-      landmarkDectectionResult,
-      webDetectionResult,
-      labelDetectionResult
-    ] = await Promise.all([
-      client.landmarkDetection(filename),
-      client.webDetection(filename),
-      client.labelDetection(filename)
-    ])
+    const landmarkDectectionResult = await client.landmarkDetection(filename)
 
     console.log('processing...')
-    console.log(
-      'web dection.webEntities ... : ',
-      webDetectionResult[0].webDetection
-    )
-    console.log(
-      'label dection[0].labelAnnotations.. ',
-      labelDetectionResult[0].labelAnnotations[0]
-    )
-    console.log(
-      'web dection visuals ... : ',
-      webDetectionResult[0].webDetection.visuallySimilarImages
-    )
-
     const landmark = landmarkDectectionResult[0].landmarkAnnotations[0]
     console.log('Landmark Detection Start... ')
     console.log(landmark)
@@ -231,7 +210,7 @@ router.get('/getDataFromGoogleAPI', async (req, res, next) => {
     // }
 
     console.log('touch here')
-    res.send("Happy!")
+    res.send('Happy!')
     res.end()
   } catch (err) {
     console.error('Detection Process Completed...')
