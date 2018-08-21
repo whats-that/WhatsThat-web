@@ -144,6 +144,13 @@ router.post('/textToVoice', async (req, res, next) => {
 })
 
 /* =========================================================== */
+router.get('/', (req, res, next) => {
+  try {
+    res.send('working!')
+  } catch (err) {
+    console.error(err)
+  }
+})
 
 /* to test Google API */
 router.get('/getDataFromGoogleAPI', async (req, res, next) => {
