@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - node # uses most recent stable node version
+services:
+  - postgresql # starts up postgres
+addons:
+  postgresql: '9.6' # highest available postgres version on Travis
+dist: trusty # uses trusty environment
+sudo: false # when on trusty, uses Docker containers for speed
+notifications:
+  email:
+    on_success: change # default: change (only when going from broken to fixed)
+    on_failure: always # default: always (which is annoying, as it should be)
+install:
+  - npm ci # faster, goes only from package-lock
+before_script:
+  - psql -c 'create database "whatsthat-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
+
+before_deploy:
+  - npm run build-client # make the bundle
+  - rm -rf node_modules # omit from the tarball, since we skip cleanup
+deploy:
+  skip_cleanup: true # prevents travis from deleting the build
+  provider: heroku
+  app: whatsthat-capstone
+  api_key:
+    secure: "G7hJKoSd+Wrv9hCpapw+0AcLdGIvRWeclae6bTLPHXbM002I4REzq2jajJNs/WeEEoaUwVJswl7hEXeMbixK7JHT11+WxmWmNsN2Ejv2F5XtGt3ZusWCVMmW0r2qWhvhm3jLynD7ZDoMbPh8ZCHZd49xDc1nCDCV6QY/tNNmH9kizfe4MxenNzOYlOrD9wDJKSAwiIzAxv98/L7DJj3CPMXZWgiBhtQCnlsDlFRzQuSy/rM/h0HBTqcUwDY32GOpEw1j0FrZL2atVWArTpXwGSV5aQ2afQBjsrIyvyvGXNKhkM4VtI05G4nC4tZydyT9kz6gvkbvbO5q9xYY9arn272mVd58vT9w7zmlfnqVagYqy1qfmHhWlDZYbjOGZ+uSp+hs8KFToWRCC35ptrVHb7VvpD0Vg1oybHb2E6AcKDRSfZ55kODh2oSmL/ech7ivZhlwjiMgugyNk+Pp6d3PjVApEbhnf5E/xIYbi7uao3LElDA8Ye6/ie04F3GS29X9hSMNDP2O+QClTA8HkdM23n1ESVTxn6TWxZpviweymjXLddoXqcwnV0fUec4cz1zKmaaS/4T+UR9mAQ06T5BaQfkUXtj3kz670V6mnDV5hMZAs/fG/3Fj3Ec5LYZZ1ecH2GznVecmozTEVceN0p52V8AuDMDUL3eL6tXDg4kEfZE=" # see README
