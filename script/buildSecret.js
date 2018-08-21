@@ -17,4 +17,5 @@ fs.writeFile('secrets.json', `{
 }`, (err) => {if (err) throw err})
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS = path.join(process.cwd(), 'secrets.json')
+fs.writeFile('secrets.js', '', (err) => {if (err) throw err})
 
