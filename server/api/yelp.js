@@ -1,19 +1,6 @@
 const router = require('express').Router()
 const axios = require('axios')
 
-// just a test route for the POST route
-// router.get('/', async (req, res, next) => {
-//   try {
-//     let location = {
-//       latitude: 40.704886099999996,
-//       longitude: -74.00914379999999}
-//     const restaurant = await axios.post('http://localhost:8080/api/yelp', {query:'McDonalds', location})
-//     res.send(restaurant)
-//   } catch (error) {
-//     next(error)
-//   }
-// })
-
 router.post('/', async (req, res, next) => {
   try {
     const {query, latitude, longitude} = req.body

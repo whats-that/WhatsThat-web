@@ -15,7 +15,6 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:userId/history', async (req, res, next) => {
   try {
-    console.log('user is...!:', req.params.userId)
     const landmarks = await Landmark.findAll({
       where: {
         userId: req.params.userId

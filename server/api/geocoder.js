@@ -8,7 +8,7 @@ router.post('/', async (req, res, next) => {
     res.json(result.data.Response.View[0].Result);
 
   } catch (err) {
-    console.warn('error', err);
+    next(err)
   }
 });
 

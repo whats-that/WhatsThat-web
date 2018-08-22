@@ -38,7 +38,6 @@ router.post('/getDataFromGoogleAPI', async (req, res, next) => {
       console.log('image error: ', err) // writes out file without error, but it's not a valid image
     })
 
-    console.log('Start Google Vision API... ')
     const filename = path.join(__dirname, '../../out.png')
 
     const [
@@ -50,24 +49,9 @@ router.post('/getDataFromGoogleAPI', async (req, res, next) => {
       client.webDetection(filename),
       client.labelDetection(filename)
     ])
-    console.log('processing...')
-    console.log(
-      'web dection.webEntities ... : ',
-      webDetectionResult[0].webDetection
-    )
-    console.log(
-      'label dection[0].labelAnnotations.. ',
-      labelDetectionResult[0].labelAnnotations[0]
-    )
-    console.log(
-      'web dection visuals ... : ',
-      webDetectionResult[0].webDetection.visuallySimilarImages
-    )
 
     const landmark = landmarkDectectionResult[0].landmarkAnnotations[0]
-    console.log('Landmark Detection Start... ')
-    console.log(landmark)
-
+  
     var returnObj = {}
     if (landmark) {
       returnObj = {
@@ -90,20 +74,11 @@ router.post('/getDataFromGoogleAPI', async (req, res, next) => {
       }
     }
 
-    // const logo = logoDetectionResult[0].logoAnnotations[0].description
-    // const logo_acc = logoDetectionResult[0].logoAnnotations[0].score
-    // try w/ all
-    // if (logo) console.log('logo is...', logo)
-    // else console.log('no logo')
-    console.log('touch here')
     res.send(returnObj)
 
     res.end()
-    // res.setHeader('Content-Type', 'text/html')
-    // res.redirect('/')
   } catch (err) {
-    // res.send("fail")
-    console.error('Detection Process Completed...')
+    next(err)
   }
 })
 
@@ -117,14 +92,8 @@ router.post('/textToVoice', async (req, res, next) => {
     await fs.writeFile('out.png', binaryData, 'binary', function(err) {
       console.log(err) // writes out file without error, but it's not a valid image
     })
-    console.log('Start Google Vision API (TextDetection)... ')
     const filename = path.join(__dirname, '../../out.png')
     const textDetectionResult = await client.textDetection(filename)
-    console.log('processing...')
-    console.log(
-      'web dection.... : ',
-      textDetectionResult[0].textAnnotations[0].description
-    )
 
     // Creates a client
     const client2 = new textToSpeech.TextToSpeechClient()
@@ -154,7 +123,6 @@ router.post('/textToVoice', async (req, res, next) => {
             console.error('ERROR:', err)
             return
           }
-          console.log('Audio content written to file: output.mp3')
         }
       )
     })
