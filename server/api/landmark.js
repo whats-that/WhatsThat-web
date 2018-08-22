@@ -13,11 +13,11 @@ router.get('/', async (req, res, next) => {
 
 router.get('/id/:id', async (req, res, next) => {
   try {
-    const landmarks = await Landmark.findById(
+    const landmark = await Landmark.findById(
       req.params.id, 
       { attributes: ['name', 'rating', 'comment', 'createdAt', 'image'] }
     )
-    res.json(landmarks)
+    res.json(landmark)
   } catch (err) {
     next(err)
   }
@@ -49,5 +49,21 @@ router.post('/', async (req, res, next) => {
     res.status(201).json(landmark)
   } catch (err) {
     next(err)
+  }
+})
+
+router.put('/id/:id', async (req, res, next) => {
+  try {
+    const landmark = await Landmark.findById(
+      req.params.id, 
+      { attributes: ['rating', 'comment'] }
+    )
+    landmark.update({
+      rating: req.body.rating,
+      comment: req.body.comment
+    })
+    res.sendStatus(201)
+  } catch (error) {
+    next(error)
   }
 })
