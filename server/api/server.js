@@ -1,3 +1,5 @@
+'use strict'
+
 const router = require('express').Router()
 const path = require('path')
 const fs = require('fs')
@@ -5,6 +7,25 @@ var fs2 = require('fs-path')
 const vision = require('@google-cloud/vision')
 const textToSpeech = require('@google-cloud/text-to-speech')
 const {Landmark} = require('../db/models')
+
+const {Compute} = require('google-auth-library')
+
+/**
+ * Acquire a client, and make a request to an API that's enabled by default.
+ */
+async function main() {
+  const client = new Compute({
+    // Specifying the serviceAccountEmail is optional. It will use the default
+    // service account if one is not defined.
+    serviceAccountEmail: 'heart2529@gmail.com'
+  })
+  const projectId = 'test1-211018'
+  const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`
+  const res = await client.request({url})
+  console.log(res.data)
+}
+
+main().catch(console.error)
 
 router.post('/getDataFromGoogleAPI', async (req, res, next) => {
   try {
@@ -108,6 +129,69 @@ router.post('/textToVoice', async (req, res, next) => {
     res.send(text)
   } catch (err) {
     console.error(err)
+  }
+})
+
+/* =========================================================== */
+router.get('/', (req, res, next) => {
+  try {
+    res.send('working...')
+  } catch (err) {
+    console.error(err)
+  }
+})
+
+/* to test Google API */
+router.get('/getDataFromGoogleAPI', async (req, res, next) => {
+  try {
+    const client = new vision.ImageAnnotatorClient()
+    console.log('Start Google Vision API... ')
+    const filename = path.join(__dirname, '../../img1.jpg')
+
+    const landmarkDectectionResult = await client.landmarkDetection(filename)
+
+    console.log('processing...')
+    const landmark = landmarkDectectionResult[0].landmarkAnnotations[0]
+    console.log('Landmark Detection Start... ')
+    console.log(landmark)
+
+    // var returnObj = {}
+    //   if (landmark) {
+    //   returnObj = {
+    //     name: landmark.description,
+    //     image: blob,
+    //     coordinates: [
+    //       landmark.locations[0].latLng.latitude,
+    //       landmark.locations[0].latLng.longitude
+    //     ],
+    //     accuracy: Number(landmark.score.toFixed(2)),
+    //     webEntities: webDetectionResult[0].webDetection.webEntities,
+    //     webImages: webDetectionResult[0].webDetection.visuallySimilarImages,
+    //     label: labelDetectionResult[0].labelAnnotations[0]
+    //   }
+    // } else {
+    //   returnObj = {
+    //     webEntities: webDetectionResult[0].webDetection.webEntities,
+    //     webImages: webDetectionResult[0].webDetection.visuallySimilarImages,
+    //     label: labelDetectionResult[0].labelAnnotations[0]
+    //   }
+    // }
+
+    console.log('touch here')
+    res.send('Happy!')
+    res.end()
+  } catch (err) {
+    console.error('Detection Process Completed...')
+  }
+})
+
+router.get('/history/:id', async (req, res, next) => {
+  try {
+    console.log(req.params.id)
+    const landmark = await Landmark.findById(req.params.id)
+    res.json(landmark)
+  } catch (error) {
+    next(error)
   }
 })
 

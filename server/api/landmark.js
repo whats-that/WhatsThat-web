@@ -13,12 +13,10 @@ router.get('/', async (req, res, next) => {
 
 router.get('/id/:id', async (req, res, next) => {
   try {
-    const landmarks = await Landmark.findById({
-      where: {
-        id: req.params.id
-      },
-      attributes: ['name', 'rating', 'comment', 'createdAt', 'image']
-    })
+    const landmarks = await Landmark.findById(
+      req.params.id, 
+      { attributes: ['name', 'rating', 'comment', 'createdAt', 'image'] }
+    )
     res.json(landmarks)
   } catch (err) {
     next(err)
