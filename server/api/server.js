@@ -69,8 +69,12 @@ router.post('/text', async (req, res, next) => {
     })
     const filename = path.join(__dirname, '../../out.png')
     const textDetectionResult = await client.textDetection(filename)
-    const text = textDetectionResult[0].textAnnotations[0].description
-    res.send(text)
+    if(textDetectionResult[0].textAnnotations[0]){
+      const text = textDetectionResult[0].textAnnotations[0].description
+      res.send(text)
+    } else {
+      res.send('Bad image')
+    }
   } catch (err) {
     console.error(err)
   }
